@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Server-Sent Events Sample</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-light border-bottom mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">
+                    <div class="align-middle d-inline-block text-left">
+                        <h1 class="m-0">Server-Sent Events (SSE) Sample</h1>
+                        <h2 class="m-0 mt-1 text-muted smallest font-weight-normal text-monospace">ASP.Net Core 5 WebAPI</h2>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="row pb-3">
+            <div class="col-md-9 mx-auto">
+                <div class="alert alert-info border border-info" id="divAlert">
+                    <p class="mb-2">Click on <ins>Connect</ins> button to connect to the server &amp; wait for messages arriving from server without sending any new request to the server.</p>
+                    <p class="mb-0"><small>Press <kbd>F12</kbd> to see EventStream activity logs in network tab</small></p>
+                </div>
+
+                <div class="form-group text-right">
+                    <button type="button" id="bConnectSSE" onclick="sse_connect()" class="btn btn-primary" style="width:120px;">Connect</button>
+                    <button type="button" id="bCloseSSE" onclick="sse_close()" class="btn btn-danger d-none" style="width:120px;">Close</button>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend class="text-monospace">Receive from Server</legend>
+                    <div class="border border-warning rounded text-secondary p-1" id="divResult"><ul class="mb-0"></ul></div>
+                </fieldset>
+            </div>
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container text-center">
+            <a href="https://hshahpouri.github.io/ServerSentEvent-Sample/">Server-Sent Events (SSE) Sample</a> is maintained by <a href="https://github.com/hshahpouri">hshahpouri</a>.
+        </div>
+    </footer>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js"></script>
+</body>
+</html>
