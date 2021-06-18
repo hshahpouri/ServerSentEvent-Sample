@@ -31,7 +31,7 @@ eSource.onmessage = function (event) {
 That's all!
 
 Now you need to create an endpoint at _/home/events_ that produces `content-type: text/event-stream` and keeps
-the connection opens while the client keeps its connection open!
+the connection open while the client keeps its connection open!
 
 > If your Action on the server-side completes with a [Successful responses](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses)
 > before the client closes the connection, the client call the **onerror** event of the `EventSource` and
