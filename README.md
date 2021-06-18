@@ -11,7 +11,7 @@ on _w3schools.com_ for more information.
 
 #### How it works?
 
-SSE is a event-based method of receiving data from the server; so, at first you need to define that from which
+SSE is an event-based method of receiving data from the server; so, at first you need to define that from which
 URL you want to receive data. In a `<script>` tag, add this line of _javascript_ :
 
 ```javascript
